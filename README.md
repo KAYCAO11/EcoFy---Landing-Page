@@ -22,3 +22,7 @@ Projeto desenvolvido com abordagem mobile-first.
 Repositório: https://github.com/KAYCAO11/EcoFy---Landing-Page
 
 ## 📸 Preview
+
+![Preview Mobile](./modelo/imagens/preview-mobile1.png)
+
+![Preview Mobile](./modelo/imagens/preview-mobile2.png)
