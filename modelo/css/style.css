@@ -82,6 +82,10 @@ nav {
     padding: 2.5em;
     gap: 1rem;
     margin-top: -3rem;
+    background:
+        linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0) 5rem),
+        linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 5rem),
+        #73b01d45;
 }
 
 .imagem-sustentavel img {
@@ -320,6 +324,7 @@ footer a {
         border-radius: 0.5rem;
         padding: 0.5rem 1rem;
         width: fit-content;
+        margin-bottom: 7rem;
     }
 
     .sobre-text {
@@ -332,23 +337,85 @@ footer a {
         border-radius: 15px;
         padding: 40px;
         margin: 1rem;
-        font-size: 1.1rem ;
+        font-size: 1.1rem;
+        margin-bottom: 6rem;
     }
 
     .mini-list {
-        list-style: none;
-        display: flex;
-        background-color: #73b01d45;
-        padding: 5rem;
+        display: none;
     }
 
-    .mini-list li {
-        border: 3px groove #72b01d;
-        border-radius: 5rem;
-        margin-right: 2rem;
-        text-align: center;
+
+    .como-atua {
+        padding: 2.5rem 2rem;
+        gap: 1rem;
+        text-align: left;
+        margin-top: -4rem;
+        background:
+            linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0) 7rem),
+            linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 5rem),
+            #73b01d70;
+        color: black;
+    }
+
+    .atuacao-item {
+        display: flex;
         margin: 2rem;
+        gap: 10rem; 
+        padding-top: 3rem;
+        align-items: flex-start;
+    }
+
+    .imagem-sustentavel img {
+        margin-top: 1.5rem;
+        width: 490px;
+        height: 300px;
+    }
+
+    .atuacao-item2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        max-width: 100%;
+        margin: 1rem;
+        flex-direction: row-reverse;
+    }
+
+    .atuacao-item2 .blocos,
+    .atuacao-item2 .cidade-natureza {
+        flex: 1;
+    }
+
+    .cidade-natureza img {
         width: 100%;
+        max-width: 28rem;
+        height: auto;
+        margin-top: -4rem;
+    }
+    
+
+    .impactos-resultado {
+        text-align: left;
+    }
+
+    .texto-impactos-resultados h2 {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .texto-impactos-resultados p {
+        padding: 1rem;
+        margin-bottom: 3rem;
+        font-size: 1.05rem;
+    }
+
+    .numeros {
+        display: flex;
+        gap: 3rem;
+        margin: 2rem;
     }
 
 }
