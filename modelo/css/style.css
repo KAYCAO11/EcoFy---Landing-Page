@@ -82,10 +82,6 @@ nav {
     padding: 2.5em;
     gap: 1rem;
     margin-top: -3rem;
-    background:
-        linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0) 5rem),
-        linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 5rem),
-        #73b01d45;
 }
 
 .imagem-sustentavel img {
@@ -350,11 +346,8 @@ footer a {
         padding: 2.5rem 2rem;
         gap: 1rem;
         text-align: left;
-        margin-top: -4rem;
-        background:
-            linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0) 7rem),
-            linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 5rem),
-            #73b01d70;
+        margin-top: -2rem;
+       
         color: black;
     }
 
@@ -418,4 +411,118 @@ footer a {
         margin: 2rem;
     }
 
+    .reflorestamento-urbano {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .texto-reflorestamento h2 {
+        text-align: center; 
+        margin-bottom: 4rem;
+        font-size: 2rem;
+    }
+
+     .blocos-reflorestamento {
+        display: flex;
+        gap: 1rem; 
+        margin-top: 0.6rem;
+     }
+
+    .blocos-reflorestamento div{
+        border: 2px solid #72b01d;
+        border-radius: 20px;
+        padding: 0.6rem;
+        margin: 1rem 0 1rem;
+    }
+
+    .convite-participar   {
+        align-items: grid;
+        padding: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    } 
+
+    .convite-participar h2 {
+        text-align: center;
+        font-size: 2.1rem;
+    }
+    
+    .convite-participar p  {
+        margin: 0.7rem;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .div-convite {
+        text-align: center;
+        margin: 0.8rem;
+    }
+
+     #button-convite {
+       width: 20em; 
+       height: 4rem;
+    }
+
+    #button-convite:hover::before {
+        top: -60px;
+        left: -20px;
+        
+    }
+
+    #button-convite::before {
+        width: 400px;
+        height: 200px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: minmax(0, 2.2fr) minmax(220px, 1fr);
+        grid-template-areas:
+            "top sobre"
+            "contato contato"
+            "copy copy";
+        align-items: start;
+        gap: 2rem 4rem;
+        padding: 3rem 4rem 2rem;
+        text-align: left;
+    }
+
+    .footer-top {
+        grid-area: top;
+        display: grid;
+        gap: 0.75rem;
+        justify-self: start;
+        margin: 0;
+        width: auto;
+        max-width: 40rem;
+    }
+
+    .footer-top h3,
+    .footer-top h5,
+    .footer-sobre-Ecofy h5,
+    .footer-contato h5 {
+        margin: 0;
+    }
+
+    .footer-sobre-Ecofy {
+        grid-area: sobre;
+        display: grid;
+        justify-self: start;
+        align-content: start;
+        gap: 0.85rem;
+        margin: 0;
+    }
+
+    .footer-contato {
+        grid-area: contato;
+        justify-self: start;
+        margin-top: 0.5rem;
+    }
+
+    footer > h5 {
+        grid-area: copy;
+        margin: 1rem 0 0;
+        padding-top: 1.2rem;
+        border-top: 1px solid rgba(190, 189, 189, 0.25);
+    }
 }
