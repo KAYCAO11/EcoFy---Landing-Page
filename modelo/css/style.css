@@ -10,6 +10,10 @@ body {
     font-family: "Figtree", sans-serif;
 }
 
+body.menu-aberto {
+    overflow: hidden;
+}
+
 .reveal {
     opacity: 0;
     transform: translateY(36px);
@@ -57,8 +61,73 @@ header {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.256);
 }
 
-nav {
-    display: none;
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: min(78vw, 21rem);
+    height: 100vh;
+    padding: 1.25rem 1.1rem 2rem;
+    background: linear-gradient(180deg, #5f9912 0%, #72b01d 55%, #83c52a 100%);
+    box-shadow: 10px 0 28px rgba(0, 0, 0, 0.24);
+    transform: translateX(-105%);
+    transition: transform 0.3s ease;
+}
+
+.menu.is-open {
+    transform: translateX(0);
+}
+
+.menu-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.menu-fechar {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.05rem;
+    padding: 0.9rem 0.95rem;
+    border-radius: 0.85rem;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 15;
+    background-color: rgba(0, 0, 0, 0.38);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.menu-overlay.is-visible {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 #hamburguer {
@@ -265,6 +334,7 @@ footer {
     color: #bebdbd;
     width: 100%;  
     height: 100%;
+    box-sizing: border-box;
 }
 
 .footer-top img {
@@ -303,18 +373,43 @@ footer a {
 
     nav {
         display: flex;
-        gap: 7rem;
     }
 
     .menu {
+        position: static;
+        z-index: auto;
         display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: center;
+        gap: 3rem;
+        width: auto;
+        height: auto;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+        transform: none;
+        transition: none;
+        
     }
 
     .menu a {
         color: #38b000;
         text-decoration: none;
+        font-size: 1.12rem;
+        padding: 0;
+        border-radius: 0;
+        background-color: transparent;
         transition: ease-in 0.2s;
+    }
+
+    .menu a:hover {
+        background-color: transparent;
+    }
+
+    .menu-topo,
+    .menu-overlay {
+        display: none;
     }
 
     a:hover {
