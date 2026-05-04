@@ -31,8 +31,8 @@ Repositório: https://github.com/KAYCAO11/EcoFy---Landing-Page
 
 ### 🖥️ Desktop
 
-![Preview Mobile](./modelo/imagens/preview-desktop1.png)
+![Preview Mobile](./modelo/imagens/previw-desktop1.png)
 
-![Preview Mobile](./modelo/imagens/preview-desktop2.png)
+![Preview Mobile](./modelo/imagens/previw-desktop2.png)
 
 ![Preview Mobile](./modelo/imagens/preview-desktop3.png)
